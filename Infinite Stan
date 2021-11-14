@@ -1,0 +1,10 @@
+local stamina
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack.Main:GetChildren()) do 
+                        if v:IsA("LocalScript") and v.Name ~= "LockOnScripts" then
+                            stamina = v
+                        end
+                    end
+local ab = getsenv(stamina)
+for i,v in pairs(ab)do 
+hookfunction(ab.takeStamina, function() return -math.huge end)
+end
