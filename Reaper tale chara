@@ -1,0 +1,168 @@
+
+wait(2)
+    local v1 = {
+        [1] = getrenv()._G.Pass, 
+        [2] = "Damage", 
+        [3] = math.huge, 
+        [4] = game.Players.LocalPlayer.Character
+    }
+    local event = game:GetService("ReplicatedStorage").Remotes.Events
+    event:FireServer(v1)
+wait(1)
+local A_1 = 
+{
+    [1] = getrenv()._G.Pass, 
+    [2] = "EquipWeapon", 
+    [3] = "RelKnife"
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.FriskMoves
+Event:InvokeServer(A_1)
+wait(0.1)
+local A_1 = 
+{
+    [1] = getrenv()._G.Pass, 
+    [2] = "EquipArmor", 
+    [3] = "TemmieArmor"
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.FriskMoves
+Event:InvokeServer(A_1)
+wait(0.5)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5941649105"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+
+local A_1 = 
+{
+    [1] = getrenv()._G.Pass, 
+    [2] = "EquipWeapon", 
+    [3] = "BettySythe"
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.FriskMoves
+Event:InvokeServer(A_1)
+
+--gears ChaosBuster RealKnife2 RealKnife HyperGoner Kumu StainedApron BettyFinalKnife RoseSword RoseSwordBase RoseShield LeftGlove RightGlove TornNotebook BalletShoes EmptyGun TheLocket CowboyHat Bandage TemmieArmor FadedRibbon ManlyBandana OldTutu CloudyGlasses RArmGauntlet BettySythe CrossBlaster CrossBone CrossCharaBlade LArmGauntlet SakuyaKnife CrossBone2 ChaosSaber Bone Spear GodCarrot BettyKnifeHand Stick ToyKnife BurntPan RelKnife WornDagger CrossSansBlade GTFriskShield GTFriskSword
+
+game:GetService("UserInputService").InputBegan:Connect(function(key, gc)
+    if gc then return end
+    if key.KeyCode == Enum.KeyCode["J"] then -- keybind
+-- script here
+local A_1 =
+{
+        [1] = getrenv()._G.Pass,
+        [2] = "UseItem",
+        [3] = game:GetService("Players").LocalPlayer.Character.Items.LegendaryHero
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.FriskMoves
+Event:InvokeServer(A_1)
+
+
+--items SnowballPiece SnowballPiece Steak Butterscotch LegendaryHero LegendaryHero LegendaryHero InstantNoodles InstantNoodles InstantNoodles
+end
+end)
+wait(0.5)
+
+local Player = game.Players.LocalPlayer
+
+Player.Chatted:Connect(function(Chat)
+wait()
+local A_1 =  {
+      [1] = getrenv()._G.Pass, 
+      [2] = "Chatted", 
+      [3] = (Chat), 
+      [4] = Color3.fromRGB(175, 0, 0)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+end)
+
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.TextColor3 = Color3.fromRGB(102, 0, 0)
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.Text = "Reaper!Chara"
+
+local A_1 = 
+{
+    [1] = getrenv()._G.Pass, 
+    [2] = "EquipWeapon", 
+    [3] = "RelKnife"
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.FriskMoves
+Event:InvokeServer(A_1)
+
+game.Lighting.ColorCorrection.TintColor = Color3.fromRGB(255, 200, 200)
+player = game.Players.LocalPlayer
+char = player.Character
+for _,v in pairs(char:GetDescendants()) do
+if v.Name == 'Grow' then
+v:Destroy()
+end
+end
+
+local player = game.Players.LocalPlayer
+local char = player.Character
+
+
+for _,v in pairs(char:GetDescendants()) do
+if v.Name == 'BettySythe' and v:IsA('MeshPart') then
+v.BrickColor = BrickColor.new(255,0,0)
+end
+end
+
+for _,v in pairs(char:GetDescendants()) do
+if v.Name == 'Piece' and v:IsA('UnionOperation') then
+v.BrickColor = BrickColor.new(0,0,0)
+end
+end
+
+for _,v in pairs(char:GetDescendants()) do
+if v.Name == 'Piece' and v:IsA('MeshPart') then
+v.BrickColor = BrickColor.new(255,0,0)
+end
+end
+
+
+player = game.Players.LocalPlayer
+char = player.Character
+for _,v in pairs(char:GetDescendants()) do
+if v.Name == 'temmie face' then
+v:Destroy()
+end
+end
+
+player = game.Players.LocalPlayer
+char = player.Character
+for _,v in pairs(char:GetDescendants()) do
+if v.Name == 'ToyKnife' then
+v:Destroy()
+end
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(key, gc)
+    if gc then return end
+    if key.KeyCode == Enum.KeyCode["X"] then
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4800266314"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1.2)
+local args = {
+    [1] = getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 0.2, 
+        ["Type"] = "Knockback", 
+        ["HitEffect"] = "RedWind", 
+        ["CombatInv"] = true,
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned, 
+        ["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 75,
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.KnifeHit2,
+        ["Damage"] = 35
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+wait(1)
+k:Stop()
+end
+end)
