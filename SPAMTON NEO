@@ -1,0 +1,599 @@
+--PRIVATE SCRIPT
+--[[SPAMTON NEO]]
+ 
+--v1.0
+ 
+--just a tree#0556 - creator
+--lopviii#9967 - debugger, support (cool guy)
+
+
+--character loader
+
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Asriel"
+wait(3)
+
+--locals
+
+local pass = getrenv()._G.Pass
+local moves = game:GetService("ReplicatedStorage").Remotes.AsrielMoves
+local player = game.Players.LocalPlayer
+local UIS = game:GetService("UserInputService")
+local target = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+local character = player.Character
+
+
+--character upgrader
+
+spawn(function()
+    repeat wait()
+        for _,v in pairs(character:GetChildren()) do
+            if v.Name == 'DrainStamina' or v.Name == 'DrainSprint' or v.Name == 'Hit' or v.Name == 'Hitt' or v.Name == 'Damaged' or v.Name == 'Grounded' or v.Name == 'StayGrounded' or v.Name == 'KnockBack' or v.Name == 'Reset' then
+                v:Destroy()
+            end
+        end
+    until false
+end)
+
+
+--music changer
+
+local function battleTheme()
+
+for i,v in pairs(game.Players.LocalPlayer:WaitForChild("StarterPlaylist"):GetChildren()) do
+v:Destroy()
+end
+local music = Instance.new("Sound",game.Players.LocalPlayer:WaitForChild("StarterPlaylist"))
+music.Volume = 1.5
+music.SoundId = "rbxassetid://7506992048"
+music.Looped = true
+music:Play()
+
+end
+
+
+--colored chat system
+
+local function chat(text, color)
+    
+    local A_1 = 
+{
+    [1] = pass, 
+    [2] = "Chatted", 
+    [3] = text, 
+    [4] = color
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+    
+end
+
+
+--UI changer
+
+player.PlayerGui.UI.Ui.StaminaBar.Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+player.PlayerGui.UI.Ui.ManaBar.Bar.BackgroundColor3 = Color3.fromRGB(160, 0, 160)
+character.Head.HealthBar.Frame.BackHealth.BackgroundColor3 = Color3.fromRGB(160, 0, 160)
+character.Head.HealthBar.Frame.Health.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+character.Head.HealthBar.Frame.PName.Text = "[[ SPAMTON NEO ]]"
+
+
+--dialogue system
+
+character.HumanoidRootPart.Anchored = true
+
+for i,v in pairs(game.Players.LocalPlayer:WaitForChild("StarterPlaylist"):GetChildren()) do
+v:Destroy()
+end
+local music = Instance.new("Sound",game.Players.LocalPlayer:WaitForChild("StarterPlaylist"))
+music.Volume = 1.5
+music.SoundId = "rbxassetid://7527143758"
+music.Looped = true
+music:Play()
+
+chat("HOLY [[Soda]] DO I FEEL GOOD...", Color3.fromRGB(255, 255, 0))
+wait(3)
+chat("HERE I AM!! KRIS!!", Color3.fromRGB(160, 0, 160))
+wait(3)
+chat("BIG", Color3.fromRGB(255, 255, 0))
+wait(1)
+chat("BIG", Color3.fromRGB(160, 0, 160))
+wait(1)
+chat("[[BIGGER AND BETTER THAN EVER]]", Color3.fromRGB(255, 255, 0))
+wait(3)
+chat("HA HA HA... THIS POWER IS", Color3.fromRGB(160, 0, 160))
+wait(4)
+chat("FREEDOM", Color3.fromRGB(255, 0, 0))
+wait(3)
+chat("I WON'T HAVE TO BE JUST A PUPPET ANY MORE!!!!", Color3.fromRGB(125, 0, 0))
+wait(3)
+ 
+character.HumanoidRootPart.Anchored = false
+
+for i,v in pairs(game.Players.LocalPlayer:WaitForChild("StarterPlaylist"):GetChildren()) do
+v:Destroy()
+end
+
+wait(1.5)
+
+battleTheme()
+
+
+--z move
+ 
+UIS.InputBegan:Connect(function(inputObject, isTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.Z then
+ 
+print("z move triggered")
+    
+chat("NOW IS YOUR CHANCE TO BECOME A [[BIG SHOT]]", Color3.fromRGB(255, 255, 0))
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4612158434"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "CarrotHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.GroundHurt,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.GroundHit,
+    ["Damage"] = 40
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+    
+end
+end)
+ 
+ 
+--x move
+ 
+UIS.InputBegan:Connect(function(inputObject, isTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.X then
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5770352035"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Normal",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+    ["Velocity"] = Vector3.new(0, -0.01, 0),
+    ["HitTime"] = 0.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Kick,
+    ["Damage"] = 10
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+end)
+ 
+ 
+--function C move
+
+local function CmoveF()
+
+chat("[[BIG SHOT]]", Color3.fromRGB(255, 255, 0))
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4612158434"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.GroundHurt,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 1,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.GroundHit,
+    ["Damage"] = 40
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+
+
+--C move
+
+UIS.InputBegan:Connect(function(inputObject, isTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.C then
+
+CmoveF()
+wait(0.05)
+CmoveF()
+wait(0.05)
+CmoveF()
+wait(0.05)
+CmoveF()
+wait(0.05)
+CmoveF()
+wait(0.05)
+CmoveF()
+wait(0.05)
+CmoveF()
+
+end
+end)
+
+
+--V move
+
+UIS.InputBegan:Connect(function(inputObject, IsTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.V then
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://3207868272"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(3)
+
+chat("ALL YOU GOTTA DO IS [[Big]]", Color3.fromRGB(160, 0, 160))
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+    ["Damage"] = 5
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+end)
+
+
+--B move
+
+UIS.InputBegan:Connect(function(inputObject, isTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.B then
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+    ["Damage"] = 5
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+chat("BUT KRIS, IF YOU REFUSE. THAT'S YOUR CHOICE. I CAN'T FORCE YOU.", Color3.fromRGB(255, 255, 0))
+
+wait(2.5)
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+    ["Damage"] = 5
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+wait(2.5)
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+    ["Damage"] = 5
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+wait(2.75)
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://3201755772"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(3)
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+    ["Velocity"] = Vector3.new(0, 100, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+    ["Damage"] = 15
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+end)
+
+
+--function1 N move
+
+local function NmoveF1()
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4612158434"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "CarrotHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.GroundHurt,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.GroundHit,
+    ["Damage"] = 40
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+
+
+--function2 N move
+
+local function NmoveF2()
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5770352035"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Normal",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+    ["Velocity"] = Vector3.new(0, -0.01, 0),
+    ["HitTime"] = 0.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Kick,
+    ["Damage"] = 5
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+
+
+--function3 N move
+
+local function NmoveF3()
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4612158434"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "CarrotHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.GroundHurt,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 1,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.GroundHit,
+    ["Damage"] = 20
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+end
+
+
+--N move
+
+UIS.InputBegan:Connect(function(inputObject, isTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.N then
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://3207868272"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(3)
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned,
+    ["Velocity"] = Vector3.new(0, -0.1, 0),
+    ["HitTime"] = 2.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+    ["Damage"] = 5
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+chat("LOOK IN MY [Eyes] LOOK IN MY [Nose] LOOK IN MY [Mouth]", Color3.fromRGB(255, 0, 0))
+
+wait(2)
+
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.25)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.15)
+NmoveF2()
+wait(0.25)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF3()
+wait(0.20)
+NmoveF1()
+
+end
+end)
+
+
+--M move
+
+UIS.InputBegan:Connect(function(inputObject, isTyping)
+    if isTyping then return end
+    if inputObject.KeyCode == Enum.KeyCode.M then
+
+while true do
+
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://3207868272"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(3)
+
+chat("[[link blocked]]", Color3.fromRGB(255, 0, 0))
+
+local args = { 
+[1] = getrenv()._G.Pass,
+[2] = game.Players.LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+[3] = {
+    ["Type"] = "Knockback",
+    ["HitEffect"] = "BoneHitEffect",
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.GroundHurt,
+    ["Velocity"] = Vector3.new(0, -0.01, 0),
+    ["HitTime"] = 1.5,
+    ["CombatInv"] = true,
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.GroundHit,
+    ["Damage"] = 40
+}
+}
+ 
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(unpack(args))
+
+wait(0.10)
+
+end
+end
+end)
