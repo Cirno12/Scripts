@@ -1,0 +1,5 @@
+local args = {
+    [1] = {
+        [1] = getrenv()._G.Pass,
+        [2] = "TakeStamina",
+        [3] = 2300
