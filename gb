@@ -1,0 +1,326 @@
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Idle2.AnimationId = "rbxassetid://4495592637"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Idle3.AnimationId = "rbxassetid://4495592637"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Idle.AnimationId = "rbxassetid://3931666874"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Block.AnimationId = "rbxassetid://4290724438"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Block2.AnimationId = "rbxassetid://4290724438"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BasicCombat.Light1.AnimationId = "rbxassetid://4612209624"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BasicCombat.Light2.AnimationId = "rbxassetid://6136150963"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BasicCombat.Light3.AnimationId = "rbxassetid://4800436094"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BasicCombat.Light4.AnimationId = "rbxassetid://6136150963"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BasicCombat.Light5.AnimationId = "rbxassetid://4800436094"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BasicCombat.Light6.AnimationId = "rbxassetid://4612158434"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BladesCombat.Light1.AnimationId = "rbxassetid://5657141412"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BladesCombat.Light2.AnimationId = "rbxassetid://5657142368"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BladesCombat.Light3.AnimationId = "rbxassetid://5657143572"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BladesCombat.Light4.AnimationId = "rbxassetid://5657144478"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BladesCombat.Light5.AnimationId = "rbxassetid://5657145846"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.ModuleScript.Animations.BladesCombat.Light6.AnimationId = "rbxassetid://3201755772"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Walk.AnimationId = "rbxassetid://3931615526"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Walk2.AnimationId = "rbxassetid://4196634355"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Walk3.AnimationId = "rbxassetid://4196634355"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Run.AnimationId = "rbxassetid://3931693789"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Run2.AnimationId = "rbxassetid://4196684102"
+game.Players.LocalPlayer.Backpack.Main.BettyMoves.Animations.Run3.AnimationId = "rbxassetid://4196684102"
+local mouse = game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.Z then
+local v1 = {
+    [1] = getrenv()._G.Pass, 
+    [2] = "KumuGrab", 
+    [3] = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+}
+local rem = game:GetService("ReplicatedStorage").Remotes.BettyMoves
+
+rem:InvokeServer(v1)
+end
+end)
+local mouse = game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.X then
+local v1 = {
+    [1] = getrenv()._G.Pass, 
+    [2] = "BettyGrab", 
+    [3] = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+}
+local rem = game:GetService("ReplicatedStorage").Remotes.BettyMoves
+
+rem:InvokeServer(v1)
+end
+end)
+local mouse = game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.C then
+local v1 = {
+    [1] = getrenv()._G.Pass, 
+    [2] = "BettyGround", 
+    [3] = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+}
+local rem = game:GetService("ReplicatedStorage").Remotes.BettyMoves
+
+rem:InvokeServer(v1)
+end
+end)
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.V then
+local v1 = {
+    [1] = getrenv()._G.Pass, 
+    [2] = "Move2", 
+    [3] = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+}
+local rem = game:GetService("ReplicatedStorage").Remotes.BettyMoves
+
+rem:InvokeServer(v1)
+end
+end)
+local v1 = {
+    [1] = getrenv()._G.Pass, 
+    [2] = "KumuFused"
+}
+local rem = game:GetService("ReplicatedStorage").Remotes.BettyMoves
+
+rem:InvokeServer(v1)
+repeat wait() until game
+local LP = game:GetService("Players").LocalPlayer
+local repstog = game:GetService("ReplicatedStorage")
+local lght = game:GetService("Lighting")
+local rems = repstog:WaitForChild("Remotes")
+local map = workspace:WaitForChild("Map")
+local ts = game:GetService("TweenService")
+local CharaMoves = rems:WaitForChild("CharaMoves")
+local BettyMoves = rems:WaitForChild("BettyMoves")
+local SFCharaMoves = rems:WaitForChild("SFCharaMoves")
+local SansMoves = rems:WaitForChild("SansMoves")
+rems = nil
+local function GetLockInfo()
+   local val = LP.Backpack:WaitForChild("Main"):WaitForChild("LockOnScript"):WaitForChild("LockOn")
+   if not val.Value then return end
+   local hrp = val.Value:FindFirstChild("HumanoidRootPart")
+   if not hrp then return end
+   local frm = hrp.CFrame
+   return {hrp,frm}
+end
+local function GetKey()
+   return getrenv()._G.Pass
+end
+local function ChangeFrame(prt,frm)
+   if not prt or not frm then return end
+   local tbl = {
+       GetKey(),
+       "Knives",
+       "AirHit",
+       prt,
+       frm,
+       prt
+   }
+   SFCharaMoves:InvokeServer(tbl)
+end
+local function makedumspear(name)
+   local dum = Instance.new("Part")
+   dum.Anchored = true
+   dum.Name = name
+   dum.CanCollide = false
+   dum.CFrame = CFrame.new(0,0,0)
+   dum.Transparency = 1
+   dum.Parent = chr
+   return dum
+end
+_G.cd = false
+_G.stam = false
+_G.bot = false
+_G.heal = false
+_G.spear_found = false
+_G.noobs = {}
+local NOOB_MT = {
+   ["__newindex"] = function(tbl,idx,val)
+       if val == true or val == false then
+           table.insert(_G.noobs,tbl)
+       end
+       return rawset(tbl,idx,val)
+   end
+}
+local function UpdateNoobs()
+       if type(v) == "function" and not is_synapse_function(v) and getfenv(v)["script"] and getfenv(v)["script"].Parent and getfenv(v)["script"].Parent.Name == "Main" then
+           for i2,v2 in pairs(debug.getupvalues(v)) do
+               if type(v2) == "table" then
+                   debug.setmetatable(v2,NOOB_MT)
+                   for i3,v3 in pairs(v2) do
+                       if v3 == false or v3 == true then
+                           table.insert(_G.noobs,v2)
+                       end
+                   end
+               end
+           end
+       end
+   end
+local function hecc()
+   spawn(function()
+       local chr = nil
+       repeat chr = LP.Character wait() until chr ~= nil
+       local spear = chr:WaitForChild("BettySpear")
+       local hrp = chr:WaitForChild("HumanoidRootPart")
+       spear:BreakJoints()
+       spear.Anchored = false
+       repeat wait() until spear:FindFirstChild("SpearString")
+       if not GetLockInfo() then return end
+       local tab = {
+           GetKey(),
+           "Spear",
+           "Hit",
+           spear,
+           GetLockInfo()[2],
+           GetLockInfo()[1]
+       }
+       if not tab then return end
+       repeat wait() until (spear.Position-hrp.Position).magnitude > 10
+       BettyMoves:InvokeServer(tab)
+   end)
+end
+local mt = getrawmetatable(game)
+setreadonly(mt,false)
+local backup2 = rawget(mt,"__namecall")
+local random_random = function(self,...)
+   if checkcaller() then return backup2(self,...) end
+   local args = {...}
+   if getnamecallmethod() == "InvokeServer" or getnamecallmethod() == "FireServer" then
+       local tbl = args[1]
+       if type(tbl) == "table" then
+           if tbl[2] == "TakeStamina" and _G.stam == true then
+               return wait(0)
+           end
+       end
+       if type(args[3]) == "table" and args[3]["Damage"] ~= nil then
+           local fake = args[3]
+           if fake["Damage"] < 10 then
+               fake["Damage"] = 10
+           end
+           return backup2(self,args[1],args[2],fake)
+       end
+   end
+   if self == ts and getnamecallmethod() == "Create" then
+       pcall(function()
+           if args[1].Parent == map then
+               return
+           end
+           if args[1].Parent.Parent == map then
+               return
+           end
+           if args[1].Parent.Parent.Parent == map then
+               return
+           end
+           if args[1].Parent.Parent.Parent.Parent == map then
+               return
+           end
+           if args[1].Parent.Parent.Parent.Parent.Parent == map then
+               return
+           end
+           if args[1].Parent.Parent.Parent.Parent.Parent.Parent == map then
+               return
+           end
+           if args[1].Parent.Parent.Parent.Parent.Parent.Parent.Parent == map then
+               return
+           end
+       end)
+   end
+   return backup2(self,...)
+end
+local ignored = {}
+spawn(function()
+   while wait() do
+       if _G.bot and LP.Character and LP.Character:FindFirstChild("BettySpear") and GetLockInfo() then
+           local SPR = LP.Character:FindFirstChild("BettySpear")
+           local hrp = GetLockInfo()[1]
+           wait(4)
+           if SPR and hrp then
+               spawn(function()
+                   while SPR do
+                       SPR.CFrame = hrp.CFrame
+                       wait()
+                   end
+               end)
+               spawn(function()
+                   wait(5)
+                   SPR:Destroy()
+               end)
+           end
+       end
+   end
+end)
+
+if LP.Character then
+   UpdateNoobs()
+   LP.Character:WaitForChild("Attacks").DescendantAdded:Connect(function(v)
+       if not _G.bot then return end
+       local hrp = GetLockInfo()[1]
+       if v:FindFirstChildOfClass("TouchTransmitter") then
+           spawn(function()
+               while v do
+                   v.CFrame = hrp.CFrame
+                   wait()
+               end
+           end)
+       end
+   end)
+end
+LP.CharacterAdded:Connect(function()
+   spawn(function()
+       local oof = LP.Backpack:WaitForChild("Main")
+       repeat wait(0.1) until #oof:GetChildren() == 2
+       UpdateNoobs()
+   end)
+   LP.Character:WaitForChild("Attacks").DescendantAdded:Connect(function(v)
+       if not GetLockInfo() then return end
+       if not _G.bot then return end
+       local hrp = GetLockInfo()[1]
+       wait()
+       if v:IsA("BasePart") then
+           v.Anchored = true
+           spawn(function()
+               while v do
+                   v.CFrame = hrp.CFrame
+                   wait()
+               end
+           end)
+       end
+       if v:IsA("BodyVelocity") then
+           v:Destroy()
+       end
+   end)
+end)
+
+mt.__namecall = random_random
+local backup3 = mt.__newindex
+mt.__newindex = newcclosure(function(tbl,idx,val)
+   if checkcaller() then return backup3(tbl,idx,val) end
+   if tbl == lght or tbl:IsDescendantOf(lght) then
+       return
+   end
+   if tbl:IsDescendantOf(workspace) and idx == "Material" or idx == "Color" or idx == "BrickColor" or idx == "Color3" or idx == "Transparency" then
+       return
+   end
+   return backup3(tbl,idx,val)
+end)
+local backup4 = mt.__index
+mt.__index = newcclosure(function(tbl,idx)
+   if idx == "BettySpear" or idx == "SpearString" and backup4(tbl,idx) == nil then
+       local probably = makedumspear(idx)
+       return probably
+   end
+   return backup4(tbl,idx)
+end)
+spawn(function()
+   while wait(0.1) do
+       if _G.cd and #_G.noobs > 0 then
+           for i,v in pairs(_G.noobs) do
+               for i2,v2 in pairs(v) do v[i2] = nil end
+           end
+       end
+   end
+end)
+setreadonly(mt,true)
+spawn(function()
+   for i,v in pairs(lght:GetChildren()) do v:Destroy() end
+   lght.DescendantAdded:Connect(function(t) wait() t:Destroy() end)
+   repstog["Ban Remote"]:Destroy()
+end)
