@@ -1,4 +1,4 @@
-repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health < 1
+repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health < 0
 spawn(function()
    pcall(function()
     local p=game.Players.LocalPlayer;
