@@ -1,7 +1,7 @@
 game:GetService("Players").LocalPlayer.PlayerGui.Menu.Characs.Papyrus.Visible = true
 game:GetService("Players").LocalPlayer.PlayerGui.Menu.Characs.PapyrusStats.Visible = true
-game.Players.LocalPlayer.PlayerGui.Menu.Characs.CharaStats.Special1.Text = "X event"
-game.Players.LocalPlayer.PlayerGui.Menu.Characs.Chara.Text = "Underswap sans?"
+game.Players.LocalPlayer.PlayerGui.Menu.Characs.PapyrusStats.Special1.Text = "X event"
+game.Players.LocalPlayer.PlayerGui.Menu.Characs.Papyrus.Text = "Underswap sans?"
 wait(30)
 
 game.Players.LocalPlayer.PlayerGui.Musics.Papyrus.SoundId = "rbxassetid://980874337"
