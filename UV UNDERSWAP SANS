@@ -1,1 +1,713 @@
-troLL
+game:GetService("Players").LocalPlayer.PlayerGui.Menu.Characs.Papyrus.Visible = true
+game:GetService("Players").LocalPlayer.PlayerGui.Menu.Characs.PapyrusStats.Visible = true
+game.Players.LocalPlayer.PlayerGui.Menu.Characs.PapyrusStats.Special1.Text = "X event"
+game.Players.LocalPlayer.PlayerGui.Menu.Characs.Papyrus.Text = "Underswap sans?"
+wait(30)
+
+game.Players.LocalPlayer.PlayerGui.Musics.Papyrus.SoundId = "rbxassetid://980874337"
+local Player = game.Players.localPlayer
+local char = Player.Character
+local Character = Player.Character
+for i = 1, 20 do
+local Event = game:GetService("ReplicatedStorage").InfoXChara
+Event:FireServer()
+end
+
+local A_1 = "...Are you proud of what you're doing here?"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(3)
+local A_1 = "I know there are alternate timelines where all my friends are suffering"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+Wait(3)
+local A_1 = "And now you've ruined the only place where all of us where happy..."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(3)
+local A_1 = "I want to help you..."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(2)
+local A_1 = "But I can't believe in you."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(0.2)
+local Event = game:GetService("ReplicatedStorage").RaphaelAt2
+Event:FireServer()
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Made By Frisk#7771 credit go to King Dream#9746 for helping me out";
+    Text = "Uv Swap Sans Loaded Enjoy!";
+    Duration = 8;
+})
+
+mouse.KeyDown:connect(function(key) 
+    if key == "1" then
+local Event = game:GetService("ReplicatedStorage")["MultiBones"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["MultiBones"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["MultiBones"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "2" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["MultiBones"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "3" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "4" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack3"]
+Event:FireServer()
+end
+end)
+
+
+
+
+
+
+
+
+
+
+
+repeat wait() until tonumber(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health) < 500
+
+game.Players.LocalPlayer.PlayerGui.Musics.Papyrus.SoundId = "rbxassetid://6353303459"
+local Player = game.Players.localPlayer
+local char = Player.Character
+local Character = Player.Character
+
+mouse.KeyDown:connect(function(key) 
+    if key == "5" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack4"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+if key == "6" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["DisbeliefPapyrus34"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["DisbeliefPapyrus34"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+if key == "7" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+wait(0.8)
+local Event = game:GetService("ReplicatedStorage")["LB_AT1Phase1"]
+Event:FireServer()
+wait(0.8)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT2Phase1"]
+Event:FireServer()
+wait(2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT3Phase1"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT3Phase1"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT3Phase1"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT3Phase1"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT3Phase1"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+if key == "8" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase2"]
+Event:FireServer()
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "g" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+getgenv().WalkSpeedValue = 0; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+local A_1 = "[XChara] uh, you know what?"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(3)
+local A_1 = "[XChara] im out of ideas"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(3)
+local A_1 = "[XChara] You have no idea how much we tried To keep saved those moments of joy"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(3)
+local A_1 = "[XChara] You could ask that one who called himself your FRIEND..."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(5)
+local A_1 = "[XChara] They are so mad at me because i hate liars like them"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(1)
+local A_1 = "[XChara] How silly am I. You're not Cross"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(5)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+local A_1 = "[Nightmare sans] If you want to weaken someone who has your same strength..."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(3)
+local A_1 = "[Nightmare sans] You must hurt somthing important to him"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(3)
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+getgenv().WalkSpeedValue = 40; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+
+end
+end)
+
+repeat wait() until tonumber(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health) < 50
+
+game.Players.LocalPlayer.PlayerGui.Musics.Papyrus.SoundId = "rbxassetid://1045601188"
+local Player = game.Players.localPlayer
+local char = Player.Character
+local Character = Player.Character
+
+mouse.KeyDown:connect(function(key) 
+    if key == "h" then -- key bind
+    local A_1 = "THAT ENOUGH"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(2)
+local Event = game:GetService("ReplicatedStorage").RaphaelAt2
+Event:FireServer()
+wait(1)
+getgenv().WalkSpeedValue = 0; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+local A_1 = "YOU WASTED THE CHANCE I GAVE YOU"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+getgenv().WalkSpeedValue = 16; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "8" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["PapyrusTheLastAttack"]
+Event:FireServer()
+
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "9" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["DisbeliefPapyrus2"]
+Event:FireServer()
+local Event = game:GetService("ReplicatedStorage")["DisbeliefPapyrus2"]
+Event:FireServer()
+
+end
+end)
+
+mouse.KeyDown:connect(function(key) 
+    if key == "0" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local A_1 = "STOP IT I DONT WONT TO HURT YOU"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local A_1 = "GIVE UP!!!"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local A_1 = "PLSSSSS"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+local A_1 = "huff puff.."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage")["LB_AT4Phase1"]
+Event:FireServer()
+wait(5)
+
+end
+end)
+
+
+mouse.KeyDown:connect(function(key) 
+    if key == "-" then -- key bind
+local Event = game:GetService("ReplicatedStorage")["DisbeliefPapyrus42"]
+Event:FireServer()
+
+end
+end)
+
+
+
+repeat wait() until tonumber(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health) < 10
+
+game.Players.LocalPlayer.PlayerGui.Musics.Papyrus.SoundId = "rbxassetid://6502606366"
+local Player = game.Players.localPlayer
+local char = Player.Character
+local Character = Player.Character
+
+mouse.KeyDown:connect(function(key) 
+    if key == "j" then -- key bind
+getgenv().WalkSpeedValue = 5; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+local A_1 = "no i wont die."
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+end
+end)
+
+while true do
+wait()
+local Event = game:GetService("ReplicatedStorage")["XChara_Attack1Button"]
+Event:FireServer()
+wait(10)
+end
+
+mouse.KeyDown:connect(function(key) 
+    if key == "f" then -- key bind
+    local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+end
+end)
+
+repeat wait() until tonumber(game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Health) < 5
+    local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
+ local Event = game:GetService("ReplicatedStorage").WB_CounterEvent
+Event:FireServer()
+wait(2)
