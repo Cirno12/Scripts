@@ -4,15 +4,21 @@ if game.PlaceId ~= 7387924609 then
     game:GetService("TeleportService"):Teleport(7387924609)
 end;
 
-local LocalPlayer = game.Players.LocalPlayer
-local Players = game:GetService("Players")
+for i,v in pairs(game.Players:GetPlayers()) do
+if v:GetRankInGroup(10329664) > 62597418 or v:GetRankInGroup(10329664) > 61576764 then
+game.Players.LocalPlayer:Kick(v:GetRoleInGroup(10329664).." is here.")
+end
+end
 
-
-Players.PlayerAdded:Connect(function(player)
-  if player.Name == "AlreadyAxa" or player.Name == "IKickChildren135" or player.Name == "Mr_OOFERS1" or player.Name == "Robyle0" or player.Name == "sparse_gamez123" or player.Name == "Lekarma360" or player.Name == "7180000" or player.Name == "WINGS_Dot" or player.Name == "EuSOoTogrash" or player.Name == "oplayer986tv20" or player.Name == "DatsMini" or player.Name == "VoidedSaber" or player.Name == "xenocql"
-  LocalPlayer:Kick(player.name .. "joined the game")
-  end
-end)
+Players.PlayerAdded:connect(function(p)
+   local kickMessage = "" .. p.Name .. " has joined the game, and thus you have been removed.";
+   if (listBased and (List[p.Name] or List[p.UserId]) then
+       Player:Kick(kickMessage);
+   elseif (not listBased) then
+       Player:Kick(kickMessage);
+   end;
+   
+end);
 
 while getgenv().Autofarm and wait() and game.PlaceId == 7387924609 do
 pcall(function()
